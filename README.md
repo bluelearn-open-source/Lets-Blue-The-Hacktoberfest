@@ -23,5 +23,3 @@ Step 5 : Create a new branch using the commmand
 Step 6 : Create a Pull Request here.
 
 Step 7 : Congratulations, you've successfully made your contribution. Please wait for a maintainer to review and merge your PR.
-
-xxxx
