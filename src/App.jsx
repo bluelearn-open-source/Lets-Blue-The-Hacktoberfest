@@ -44,7 +44,7 @@ function App() {
       <header>
         <h1> Let's Blue Your To-Dos</h1>
       </header>
-     <h4> "An app for managing your daily tasks." </h4>
+     <q> An app for managing your daily tasks.You can add, delete and edit your To-do list. </q>
     
       <CustomForm addTask={addTask}/>
       {tasks && (
