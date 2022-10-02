@@ -11,7 +11,7 @@ const TaskList = ({ tasks, deleteTask, toggleTask, enterEditMode }) => {
         <TaskItem
           key={task.id}
           task={task}
-          deleteTask={deleteTask}
+          deleteTask={deleteTask.bind(null,task.id)}
           toggleTask={toggleTask}
           enterEditMode={enterEditMode}
         />

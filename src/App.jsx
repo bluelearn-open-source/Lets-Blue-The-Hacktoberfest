@@ -35,7 +35,10 @@ function App() {
     )))
     closeEditMode();
   } 
-
+  // Delete Task functionality
+const deleteTask = (id) => {
+  setTasks((tasks => tasks.filter(task => task.id != id)))
+}
 
 
 
@@ -44,14 +47,17 @@ function App() {
       <header>
         <h1> Let's Blue Your To-Dos</h1>
       </header>
+   
+
      <h4> "An app for managing your daily tasks." </h4>
     
+
       <CustomForm addTask={addTask}/>
       {tasks && (
         <TaskList
           tasks={tasks}
           toggleTask={toggleTask}
-  
+          deleteTask={deleteTask}
         />
       )}
     </div>
