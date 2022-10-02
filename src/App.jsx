@@ -45,7 +45,7 @@ function App() {
         <h1> Let's Blue Your To-Dos</h1>
       </header>
      <q> An app for managing your daily tasks.You can add, delete and edit your To-do list. </q>
-    
+   
       <CustomForm addTask={addTask}/>
       {tasks && (
         <TaskList
@@ -54,6 +54,16 @@ function App() {
   
         />
       )}
+        <footer>
+          <ul>
+         <li> <a href="https://www.bluelearn.in/">Website</a></li> 
+      <li> <a href="https://www.instagram.com/bluelearn.in/"> Instagram</a></li>
+      <li> <a href="https://www.linkedin.com/company/bluelearn">Linkedin</a></li>
+     <li>  <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw">Youtube</a></li>
+
+        </ul>
+        </footer>
+
     </div>
   )
 }

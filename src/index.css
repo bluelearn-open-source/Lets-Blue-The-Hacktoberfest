@@ -241,3 +241,6 @@ hr {
   border: 0.1em solid hsl(var(--accent) / 0.3);
   box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
 }
+ul{
+  list-style-type: none;
+}
