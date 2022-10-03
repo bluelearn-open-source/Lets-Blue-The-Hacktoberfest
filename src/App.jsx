@@ -26,6 +26,14 @@ function App() {
         : t
     )))
   }
+  
+  const deleteTask = (id) => {
+    setTasks(current =>
+      current.filter(item => {
+        return item.id !== id;
+      }),
+    );
+  }
 
   const updateTask = (task) => {
     setTasks(prevState => prevState.map(t => (
@@ -36,13 +44,10 @@ function App() {
     closeEditMode();
   } 
 
-
-
-
   return (
     <div className="container">
       <header>
-        <h1> Let's Blue Your To-Dos</h1>
+        <h1>Today</h1>
       </header>
      <h4> "An app for managing your daily tasks." </h4>
     
@@ -51,7 +56,7 @@ function App() {
         <TaskList
           tasks={tasks}
           toggleTask={toggleTask}
-  
+          deleteTask={deleteTask}
         />
       )}
     </div>
