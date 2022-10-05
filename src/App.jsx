@@ -25,6 +25,7 @@ function App() {
     setTasks(prevState => [...prevState, task])
   }
 
+
   const toggleTask = (id) => {
     setTasks(prevState => prevState.map(t => (
       t.id === id
@@ -49,6 +50,7 @@ function App() {
     )))
     closeEditMode();
   }
+
 
   document.body.style = theme === "dark" && 'background: #9a999f;';
 
@@ -78,16 +80,37 @@ function App() {
       />
       </div>
       </header>
+
       
 
       <CustomForm addTask={addTask} />
+
+     <q> An app for managing your daily tasks.You can add, delete and edit your To-do list. </q>
+
+      <CustomForm addTask={addTask}/>
+
       {tasks && (
         <TaskList
           tasks={tasks}
           toggleTask={toggleTask}
+
           deleteTask={deleteTask}
         />
       )}
+
+
+        />
+      )}
+        <footer>
+          <ul>
+      <li> <a href="https://www.bluelearn.in/"><img src= "src/assets/bluelearn-icon.svg" height="20" width="50"></img>Website</a></li>
+      <li> <a href="https://www.instagram.com/bluelearn.in/"> <img src= "src/assets/instagram-icon.svg" height="20" width="50"></img>Instagram</a></li>
+      <li> <a href="https://www.linkedin.com/company/bluelearn"><img src= "src/assets/linkedin-icon.svg" height="20" width="50"></img>Linkedin</a></li>
+      <li> <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img src= "src/assets/youtube-icon.svg" height="20" width="50"></img>Youtube</a></li>
+
+        </ul>
+        </footer>
+
 
     </div>
   )
