@@ -242,7 +242,6 @@ hr {
   box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
 }
 
-
 /* Theme Section  */
 
 #light {
@@ -267,7 +266,9 @@ hr {
   border: 4px solid #5b5e6286;
 }
 
-ul{
-  list-style-type: none;
-}
+/* Check Box */
 
+input[type=checkbox]:checked + label.checkbox{
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
