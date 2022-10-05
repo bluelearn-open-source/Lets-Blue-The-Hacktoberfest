@@ -55,11 +55,11 @@ function App() {
         />
       )}
         <footer>
-          <ul>
-      <li> <a href="https://www.bluelearn.in/"><img src= "src/assets/bluelearn-icon.svg" height="20" width="50"></img>Website</a></li>
-      <li> <a href="https://www.instagram.com/bluelearn.in/"> <img src= "src/assets/instagram-icon.svg" height="20" width="50"></img>Instagram</a></li>
-      <li> <a href="https://www.linkedin.com/company/bluelearn"><img src= "src/assets/linkedin-icon.svg" height="20" width="50"></img>Linkedin</a></li>
-      <li> <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img src= "src/assets/youtube-icon.svg" height="20" width="50"></img>Youtube</a></li>
+          <ul id="logo-contain">
+      <li > <a href="https://www.bluelearn.in/"><img id="logos" src= "src/assets/bluelearn-icon.svg" height="0.9in"></img></a></li>
+      <li > <a href="https://www.instagram.com/bluelearn.in/"> <img id="logos" src= "src/assets/instagram-icon.svg" ></img></a></li>
+      <li > <a href="https://www.linkedin.com/company/bluelearn"><img id="logos" src= "src/assets/linkedin-icon.svg" ></img></a></li>
+      <li > <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img id="logos" src= "src/assets/youtube-line-icon.svg" ></img></a></li>
 
         </ul>
         </footer>
