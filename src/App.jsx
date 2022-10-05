@@ -8,6 +8,12 @@ import CustomForm from './components/CustomForm'
 import EditForm from './components/EditForm'
 import TaskList from './components/TaskList'
 
+// logo/imgs
+import yt_icon from './assets/youtube-icon.svg'
+import linkedin_icon from './assets/linkedin-icon.svg'
+import insta_icon from './assets/instagram-icon.svg'
+import blue_icon from './assets/bluelearn-icon.svg'
+
 function App() {
   const [tasks, setTasks] = useLocalStorage('react-todo.tasks', []);
   const [previousFocusEl, setPreviousFocusEl] = useState(null);
@@ -55,11 +61,11 @@ function App() {
         />
       )}
         <footer>
-          <ul>
-      <li> <a href="https://www.bluelearn.in/"><img src= "src/assets/bluelearn-icon.svg" height="20" width="50"></img>Website</a></li>
-      <li> <a href="https://www.instagram.com/bluelearn.in/"> <img src= "src/assets/instagram-icon.svg" height="20" width="50"></img>Instagram</a></li>
-      <li> <a href="https://www.linkedin.com/company/bluelearn"><img src= "src/assets/linkedin-icon.svg" height="20" width="50"></img>Linkedin</a></li>
-      <li> <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img src= "src/assets/youtube-icon.svg" height="20" width="50"></img>Youtube</a></li>
+          <ul id="logo-contain">
+      <li > <a href="https://www.bluelearn.in/"><img id="logos" src= {blue_icon} height="0.9in"></img></a></li>
+      <li > <a href="https://www.instagram.com/bluelearn.in/"> <img id="logos" src= {insta_icon} ></img></a></li>
+      <li > <a href="https://www.linkedin.com/company/bluelearn"><img id="logos" src= {linkedin_icon} ></img></a></li>
+      <li > <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img id="logos" src={yt_icon}  ></img></a></li>
 
         </ul>
         </footer>
