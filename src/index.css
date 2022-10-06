@@ -117,7 +117,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
-    padding :96px;
+    padding: 96px 96px 0;
 }
 #logos{
     color:red;
@@ -255,4 +255,28 @@ hr {
 }
 ul{
   list-style-type: none;
+}
+
+/* Theme Section  */
+
+#light {
+  background-color: #ecebf4;
+  color: #9a999f;
+}
+
+#dark {
+  background-color: #9a999f;
+  color: #ecebf4;
+}
+
+#dark .label{
+  color: #5b5e62 !important;
+}
+
+#dark label {
+  color: #e8e7ea;
+}
+
+#dark .uList li {
+  border: 4px solid #5b5e6286;
 }
