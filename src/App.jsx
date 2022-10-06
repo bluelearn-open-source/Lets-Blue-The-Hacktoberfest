@@ -48,7 +48,9 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1> Let's Blue Your To-Dos</h1>
+      <div class="sign">
+        <span class="fast-flicker">Let's &nbsp;</span> Blue &nbsp;<span class="flicker">Your &nbsp;</span>To-Dos
+      </div>
       </header>
      <q> An app for managing your daily tasks.You can add, delete and edit your To-do list. </q>
 
