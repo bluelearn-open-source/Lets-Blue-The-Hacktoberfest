@@ -16,9 +16,10 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
   return (
     <li className={styles.task}>
       <div className={styles["task-group"]}>
-      
+      <input type="checkbox" />
         <label
           htmlFor={task.id}
+          className='checkbox'
         >
           {task.name}
          
