@@ -1,33 +1,27 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 // styles
-import styles from './TaskItem.module.css';
+import styles from "./TaskItem.module.css";
 
 // Library imports
 // import { CheckIcon  } from '@heroicons/react/24/outline';
-import { PencilSquareIcon  } from '@heroicons/react/24/outline';
-import { TrashIcon } from '@heroicons/react/24/outline';
+import { PencilSquareIcon } from "@heroicons/react/24/outline";
+import { TrashIcon } from "@heroicons/react/24/outline";
 
 const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
-  const [isChecked, setIsChecked ] = useState(task.checked);
-
-
+  const [isChecked, setIsChecked] = useState(task.checked);
 
   return (
     <li className={styles.task}>
       <div className={styles["task-group"]}>
-      <input type="checkbox" />
-        <label
-          htmlFor={task.id}
-          className='checkbox'
-        >
+        <input type="checkbox" />
+        <label htmlFor={task.id} className="checkbox">
           {task.name}
-         
         </label>
       </div>
       <div className={styles["task-group"]}>
         <button
-          className='btn'
+          className="btn"
           aria-label={`Update ${task.name} Task`}
           onClick={() => enterEditMode(task)}
         >
@@ -41,9 +35,8 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
         >
           <TrashIcon width={24} height={24} />
         </button>
-
       </div>
     </li>
-  )
-}
-export default TaskItem
+  );
+};
+export default TaskItem;

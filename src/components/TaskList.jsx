@@ -1,23 +1,24 @@
 // component import
-import TaskItem from './TaskItem';
+import TaskItem from "./TaskItem";
 
 // styles
-import styles from './TaskList.module.css';
+import styles from "./TaskList.module.css";
 
 const TaskList = ({ tasks, deleteTask, toggleTask, enterEditMode }) => {
   return (
     <ul className={styles.tasks + " " + "uList"}>
-      {tasks.sort((a, b) => b.id - a.id).map(task => (
-        <TaskItem
-          key={task.id}
-          task={task}
-          deleteTask={deleteTask}
-          toggleTask={toggleTask}
-          enterEditMode={enterEditMode}
-        />
-      ))
-      }
+      {tasks
+        .sort((a, b) => b.id - a.id)
+        .map((task) => (
+          <TaskItem
+            key={task.id}
+            task={task}
+            deleteTask={deleteTask}
+            toggleTask={toggleTask}
+            enterEditMode={enterEditMode}
+          />
+        ))}
     </ul>
-  )
-}
-export default TaskList
+  );
+};
+export default TaskList;
