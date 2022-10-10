@@ -14,6 +14,7 @@ import yt_icon from './assets/youtube-icon.svg'
 import linkedin_icon from './assets/linkedin-icon.svg'
 import insta_icon from './assets/instagram-icon.svg'
 import blue_icon from './assets/bluelearn-icon.svg'
+import github_icon from './assets/icons8-github-96.svg'
 
 function App() {
   const [theme, setTheme] = useState("light")
@@ -100,6 +101,7 @@ function App() {
       <li > <a href="https://www.instagram.com/bluelearn.in/"> <img id="logos" src= {insta_icon} ></img></a></li>
       <li > <a href="https://www.linkedin.com/company/bluelearn"><img id="logos" src= {linkedin_icon} ></img></a></li>
       <li > <a href="https://www.youtube.com/channel/UCSuCYJ_jvzVJYFycR4WIZhw"><img id="logos" src={yt_icon}  ></img></a></li>
+      <li > <a href="https://github.com/bluelearn-open-source/Lets-Blue-The-Hacktoberfest"><img id="logos" src={github_icon}></img></a></li>
 
         </ul>
         </footer>
