@@ -56,6 +56,16 @@ function App() {
     closeEditMode();
   }
 
+  const enterEditMode = (task) => {
+    setIsEditing(true);
+    setEditedTask(task);
+  }
+
+  const closeEditMode = () => {
+    setIsEditing(false);
+    setEditedTask(null)
+  }
+
   document.body.style = theme === "dark" && 'background: #9a999f;';
 
   return (
@@ -86,12 +96,20 @@ function App() {
       </div>
 
       <CustomForm addTask={addTask}/>
+      {isEditing && (
+        <EditForm 
+          editedTask={editedTask}
+          closeEditMode={closeEditMode}
+          updateTask={updateTask}
+        />
+      )}
       {tasks && (
         <TaskList
           tasks={tasks}
           toggleTask={toggleTask}
           deleteTask={deleteTask}
-
+          updateTask={updateTask}
+          enterEditMode={enterEditMode}
         />
       )}
         <footer>
