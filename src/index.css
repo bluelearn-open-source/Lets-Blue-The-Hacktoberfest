@@ -104,12 +104,12 @@ body {
 }
 
 ::selection {
-  background: hsl(var(--accent) / 0.8);
+  background: hsl(var(--accent) / 1.8);
   color: hsl(var(--bg));
 }
 
 h1 {
-  font-size: calc(var(--_size) * 1.3);
+  font-size: calc(var(--_size) * 2.1);
   text-align: center;
 }
 #logo-contain{
